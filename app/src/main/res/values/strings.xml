@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WebLinkAndPhoneCall</string>
+    <string name="url_hint">http://www.sjsu.edu</string>
+    <string name="phone_hint">(XXX) XXX - XXXX</string>
+    <string name="launch_button_text">Launch</string>
+    <string name="ring_button_text">Ring</string>
+    <string name="close_button_text">Close App</string>
+    <string name="url_label_text">URL:</string>
+    <string name="phone_label_text">Phone:</string>
+    <string name="url" />
+    <string name="phone">Phone:</string>
+</resources>

@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:padding="16dp"
+    android:rotationX="0">
+
+    <!-- URL Label -->
+    <TextView
+        android:id="@+id/url_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/url"
+        android:textColor="@color/text_color"
+        android:textSize="18sp" />
+    <!-- URL Input -->
+    <EditText
+        android:id="@+id/url_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/url_label"
+        android:layout_toEndOf="@id/url_label"
+        android:backgroundTint="@color/text_color"
+        android:hint="@string/url_hint"
+        android:inputType="textUri"
+        android:minHeight="48dp"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/hint_color" />
+
+    <!-- Phone Input -->
+    <EditText
+        android:id="@+id/phone_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/phone_label"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/phone_label"
+        android:backgroundTint="@color/text_color"
+        android:hint="@string/phone_hint"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/hint_color" />
+    <!-- Launch Button (Yellow) -->
+    <Button
+        android:id="@+id/launch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/url_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@color/button_yellow"
+        android:text="@string/launch_button_text"
+        android:textColor="@color/text_black" />
+
+    <!-- Ring Button (Red) -->
+    <Button
+        android:id="@+id/call_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@color/button_red"
+        android:text="@string/ring_button_text"
+        android:textColor="@color/text_white" />
+
+    <!-- Close App Button (Black) -->
+    <Button
+        android:id="@+id/close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/call_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@color/button_yellow"
+        android:text="@string/close_button_text"
+        android:textColor="@color/text_white" />
+
+    <!-- Phone Label -->
+    <TextView
+        android:id="@+id/phone_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/launch_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/phone"
+        android:textColor="@color/text_color"
+        android:textSize="18sp" />
+
+</RelativeLayout>
